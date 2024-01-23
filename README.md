@@ -3,6 +3,7 @@ Turtle Care winform app and embedded system project
 
 Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket Control
 Plan:
+Finish the High Level Plan, considering phone application
 Find the specific sensor, socket hub, camera module, and other utilities 
 Find a board that supports all the chosen modules
 
