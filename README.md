@@ -2,31 +2,42 @@
 Turtle Care winform app and embedded system project.
 
 Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket Control.
+
 Plan:
 Finish the High Level Plan, considering phone application
+
 need a cloud MQTT Broker 
-Find the specific sensor, socket hub, camera module, and other utilities 
+
+Find the specific sensor, socket hub, camera module, and other utilities
+
 Find a board that supports all the chosen modules
 
 
+
 Objectives:
+
 Camera Streaming:
 Capture and stream video wirelessly from a camera module to a PC.
+
 screen shot capture in winform app
+
+
 Socket Control:
 Control the power to specific sockets using an Arduino-based system.
+
 	Sensors:
-Monitor the temperature and humidity through the Winform App
+		Monitor the temperature and humidity through the Winform App
 	Status Indicator:
-A few LED’s to signal the systems status
-MicroSD Card Integration:
-Store captured images or video on a microSD card for local storage.
-User Interface (WinForms App):
-Develop a WinForms application for the PC to display the video stream and control socket power.
-Components and Supplies:
-Arduino System:
-Arduino board (e.g., Arduino Uno or Arduino Mega).
-USB hub controller with programmable features.
+		A few LED’s to signal the systems status
+	MicroSD Card Integration:
+		Store captured images or video on a microSD card for local storage.
+	User Interface (WinForms App):
+		Develop a WinForms application for the PC to display the video stream and control socket power.
+	Components and Supplies:
+	Arduino System:
+		Arduino board (e.g., Arduino Uno or Arduino Mega).
+  
+		USB hub controller with programmable features.
 Wireless module for communication (e.g., Wi-Fi module).
 Camera module compatible with Arduino.
 MicroSD card module.
