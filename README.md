@@ -1,7 +1,7 @@
 # TurtleCare
-Turtle Care winform app and embedded system project
+Turtle Care winform app and embedded system project.
 
-Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket Control
+Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket Control.
 Plan:
 Finish the High Level Plan, considering phone application
 need a cloud MQTT Broker 
