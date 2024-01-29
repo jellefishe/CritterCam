@@ -19,7 +19,7 @@ Objectives:
 Camera Streaming:
 Capture and stream video wirelessly from a camera module to a PC.
 
-screen shot capture in winform app
+screenshot capture in Winform app
 
 
 Socket Control:
@@ -28,7 +28,7 @@ Control the power to specific sockets using an Arduino-based system.
 	Sensors:
 		Monitor the temperature and humidity through the Winform App
 	Status Indicator:
-		A few LED’s to signal the systems status
+		A few LEDs to signal the system status
 	MicroSD Card Integration:
 		Store captured images or video on a microSD card for local storage.
 	User Interface (WinForms App):
@@ -38,7 +38,7 @@ Control the power to specific sockets using an Arduino-based system.
 		Arduino board (e.g., Arduino Uno or Arduino Mega).
 		USB hub controller with programmable features.
 		Wireless module for communication (e.g., Wi-Fi module).
-		Camera module compatible with Arduino.
+		Camera module is compatible with Arduino.
 		MicroSD card module.
 	Socket Control:
 		Smart sockets or relay modules.
@@ -64,7 +64,7 @@ Control the power to specific sockets using an Arduino-based system.
 		Error handling for unexpected situations.
 	Documentation:
 		Document code for future reference.
-		Create a project documentation including wiring diagrams and instructions.
+		Create project documentation including wiring diagrams and instructions.
 	Safety and Compliance:
 		Follow safety practices when working with electrical components.
 		Ensure compliance with relevant regulations.
