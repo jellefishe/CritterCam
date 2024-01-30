@@ -6,7 +6,7 @@ Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket
 Plan:
 Finish the High Level Plan, considering phone application
 
-need a cloud MQTT Broker 
+need a cloud MQTT Broker to communicate between app and embedded system
 
 Find the specific sensor, socket hub, camera module, and other utilities
 
