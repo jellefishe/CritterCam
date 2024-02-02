@@ -6,7 +6,7 @@ Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket
 Plan:
 Finish the High Level Plan, considering phone application
 
-need a cloud MQTT Broker to communicate between app and embedded system
+need a cloud MQTT Broker to communicate between app and the embedded system
 
 Find the specific sensor, socket hub, camera module, and other utilities
 
@@ -38,7 +38,7 @@ Control the power to specific sockets using an Arduino-based system.
 		Arduino board (e.g., Arduino Uno or Arduino Mega).
 		USB hub controller with programmable features.
 		Wireless module for communication (e.g., Wi-Fi module).
-		Camera module is compatible with Arduino.
+		The camera module is compatible with Arduino.
 		MicroSD card module.
 	Socket Control:
 		Smart sockets or relay modules.
@@ -75,7 +75,7 @@ Control the power to specific sockets using an Arduino-based system.
 		Week 3-4: Arduino Firmware Development
 			Develop and test Arduino firmware for camera streaming, socket control, and microSD card integration.
 		Week 5-6: PC Software Development
-			Develop WinForms application for displaying video stream and controlling sockets.
+			Develop WinForms application for displaying the video stream and controlling sockets.
 			Implement communication logic.
 		Week 7-8: Integration and Testing
 			Integrate Arduino system with WinForms application.
