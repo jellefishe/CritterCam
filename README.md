@@ -72,6 +72,7 @@ Control the power to specific sockets using an Arduino-based system.
 		Week 1-2: Planning and Component Acquisition
 			Finalize project specifications and objectives.
 			Purchase necessary components and supplies.
+   		===Done===
 		Week 3-4: Arduino Firmware Development
 			Develop and test Arduino firmware for camera streaming, socket control, and microSD card integration.
 		Week 5-6: PC Software Development
