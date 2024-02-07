@@ -75,6 +75,7 @@ Control the power to specific sockets using an Arduino-based system.
    		===Done===
 		Week 3-4: Arduino Firmware Development
 			Develop and test Arduino firmware for camera streaming, socket control, and microSD card integration.
+   		===ongoing===
 		Week 5-6: PC Software Development
 			Develop WinForms application for displaying the video stream and controlling sockets.
 			Implement communication logic.
