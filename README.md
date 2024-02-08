@@ -3,6 +3,8 @@ Turtle Care winform app and embedded system project.
 
 Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket Control.
 
+Uses: Monitor your turtles, and control their filtration, lights, heat, and aeration systems all through a WPF App.
+
 Plan:
 Finish the High Level Plan, considering phone application
 
