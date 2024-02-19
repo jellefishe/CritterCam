@@ -84,6 +84,7 @@ Control the power to specific sockets using an Arduino-based system.
 			Develop WinForms application for displaying the video stream and controlling sockets.
 			Implement communication logic.
    		===ongoing===
+     		===vacation===
 		Week 7-8: Integration and Testing
 			Integrate Arduino system with WinForms application.
 			Test the complete system for functionality.
