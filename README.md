@@ -23,7 +23,7 @@ Objectives:
 Camera Streaming:
 Capture and stream video wirelessly from a camera module to a PC.
 
-screenshot capture in Winform app
+screenshot capture in a Winform app
 
 
 Socket Control:
