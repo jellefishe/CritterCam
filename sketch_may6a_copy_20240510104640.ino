@@ -9,6 +9,7 @@ const int distanceSensorEchoPin = 53;
 const int highDistWarningLEDPin = 44;
 
 const int thermistorPin = A0;  
+
 const float seriesResistor = 10000; 
 
 int colorSensorFrequency = 0;
@@ -22,9 +23,9 @@ void setup() {
 
 void loop() {
   readDistanceSensor();
-  readColorSensor();
+  readRGBColorSensors();
   readTemperatureSensor();
-  delay(5000); // Wait for half a second before the next loop iteration
+  delay(5000); 
 }
 
 void setupDistanceSensor() {
@@ -46,26 +47,41 @@ void setupColorSensor() {
 }
 
 void readDistanceSensor() {
-  long duration, distance;
-  digitalWrite(distanceSensorTrigPin, LOW);  
-  delayMicroseconds(2);       
-  digitalWrite(distanceSensorTrigPin, HIGH); 
-  delayMicroseconds(10);       
-  digitalWrite(distanceSensorTrigPin, LOW);  
-  
-  duration = pulseIn(distanceSensorEchoPin, HIGH);
-  distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and return)
+  const long warningDistance = 18;
+  long duration = measurePulseDuration();
+  long distance = calculateDistance(duration);
 
   printToSerial("Distance", distance);
 
-  if (distance < 18) {
-    digitalWrite(highDistWarningLEDPin, HIGH); // Turn on the LED if true
-  } else {
-    digitalWrite(highDistWarningLEDPin, LOW);  // Turn off the LED if false
-  }
+  handleDistanceWarningLED(distance, warningDistance);
 }
 
-void readColorSensor() {
+long measurePulseDuration() {
+  digitalWrite(distanceSensorTrigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(distanceSensorTrigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(distanceSensorTrigPin, LOW);
+
+  return pulseIn(distanceSensorEchoPin, HIGH);
+}
+
+long calculateDistance(long duration) {
+  const int speedOfSoundInCmPerMs = 0.034 / 2;
+  return duration * speedOfSoundInCmPerMs; 
+}
+
+void handleDistanceWarningLED(long distance, long threshold) {
+  digitalWrite(highDistWarningLEDPin, distance < threshold ? HIGH : LOW);
+}
+
+void readRGBColorSensors() {
+  readRedColorSensor();
+  readGreenColorSensor();
+  readBlueColorSensor();
+}
+
+void readRedColorSensor() {
   // Read red
   digitalWrite(S2, LOW);
   digitalWrite(S3, LOW);
@@ -73,7 +89,9 @@ void readColorSensor() {
   colorSensorFrequency = map(colorSensorFrequency, 40, 500, 255, 0);
   printToSerial("R", colorSensorFrequency);
   delay(100);
+}
 
+void readGreenColorSensor() {
   // Read green
   digitalWrite(S2, HIGH);
   digitalWrite(S3, HIGH);
@@ -81,7 +99,9 @@ void readColorSensor() {
   colorSensorFrequency = map(colorSensorFrequency, 40, 610, 255, 0);
   printToSerial("G", colorSensorFrequency);
   delay(100);
+}
 
+void readBlueColorSensor() {
   // Read blue
   digitalWrite(S2, LOW);
   digitalWrite(S3, HIGH);
