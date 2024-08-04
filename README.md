@@ -1,4 +1,4 @@
-# TurtleCare
+# CritterCam
 Turtle Care winform app and embedded system project.
 
 Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket Control.
