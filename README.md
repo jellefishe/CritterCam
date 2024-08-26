@@ -1,5 +1,5 @@
 # CritterCam
-Turtle Care winform app and embedded system project.
+Turtle Care winform app and IoT embedded system project.
 
 Project: Embedded System with Arduino as the CPU for Camera Streaming and Socket Control.
 
