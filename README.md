@@ -83,14 +83,16 @@ Control the power to specific sockets using an Arduino-based system.
 		Week 5-6: PC Software Development
 			Develop WinForms application for displaying the video stream and controlling sockets.
 			Implement communication logic.
-   		===ongoing===
+   		===Done===
      		===vacation===
 		Week 7-8: Integration and Testing
 			Integrate Arduino system with WinForms application.
 			Test the complete system for functionality.
 			Debug and address any issues.
+   		===Done===
 		Week 9-10: Documentation and Finalization
 			Document the project, including code and wiring diagrams.
 			Address any final adjustments or improvements.
 			Prepare for project presentation or demonstration.
+   ===Currently making patches==
 
